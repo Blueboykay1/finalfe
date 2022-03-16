@@ -1,11 +1,15 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
-</template>
+  <NewNav/>
 
+  <router-view />
+</template>
+<script>
+import NewNav from '@/components/NewNav.vue'
+export default {
+  components: { NewNav },
+  
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
