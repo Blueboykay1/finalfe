@@ -15,6 +15,9 @@
 <section class="booking">
 <div class="container">
   <form action="" class="form">
+    
+            <h2 class="subtitle">Booking form</h2>
+
       <div class="input-group">
         <label for="destination" class="input-label">Destination</label>
         <input type="text" class="input" id="destination">
@@ -53,8 +56,15 @@
           <option value="4">4</option>
           <option value="5">5</option>
         </select>
+
+        <label for="Class" class="input-label">Class:</label>
+           <select name="" id="children" class="options">
+          <option value="Economy">Economy</option>
+          <option value="Business">Business</option>
+         
+        </select>
       </div>
-      <button type="submit" class="btn form-btn btn-purple">Search
+      <button type="submit" class="btn form-btn btn-purple">Purchase Ticket
         <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
 
       </button>
@@ -104,7 +114,7 @@
                     <i class="fas fa-star rating"></i>
                     <i class="fas fa-star-half rating"></i> 
                 </div>
-                <a href="" class="btn btn-gradient">Book now
+                <a href="/" class="btn btn-gradient">Book now
                   <span class="dots"><i class="fas fa-ellipsis-h"></i></span> 
                 </a>
             </div>
@@ -118,7 +128,34 @@
           <span class="heading">Contact</span>
           <span class="sub-heading">Get in touch with us</span>
         </h5>
-      
+      <div class="contact-content">
+          <div class="traveler-wrap">
+            <img src="@/assets/Pics/contact.jpg" alt="">
+          </div>
+          <form action="" class="form contact-form">
+              <div class="input-group-wrap">
+                  <div class="input-group">
+                    <input type="text" class="input" placeholder="Name" required> 
+                    <span class="bar"></span>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" class="input" placeholder="E-mail" required> 
+                    <span class="bar"></span>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" class="input" placeholder="Subject" required> 
+                    <span class="bar"></span>
+                  </div>
+                  
+                  
+                  <div class="input-group">
+                      <textarea class="input" placeholder="E-mail" cols="30" rows="8" required> </textarea>
+                   
+                  </div>
+              </div>
+              <button type="submit" class="btn form-btn bt-purple"></button> Send Message
+          </form>
+      </div>
     </div>
 
 </section>
@@ -381,4 +418,10 @@ body{
   color: var(--yellow-solid)
 }
 
+/* contact styles */
+.contact-content{
+  display: flex;
+  justify-content: center;
+}
+/* .traveler-warp */
 </style>
