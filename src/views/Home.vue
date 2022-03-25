@@ -64,7 +64,7 @@
          
         </select>
       </div>
-      <button type="submit" class="btn form-btn btn-purple">Purchase Ticket
+      <button type="submit"  class="btn form-btn btn-purple">Purchase Ticket
         <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
 
       </button>
@@ -80,7 +80,7 @@
 
 
 </section>
-<section class="hotels">
+<section class="flights">
     <div class="container">
         <h5 class="section-head">
             <span class="heading">Explore</span>
@@ -106,7 +106,9 @@
             <div class="grid-item featured-flights">
                 <img src="../assets/Pics/f1.jpg" alt="" class="flight-image">
                 <h5 class="flight-name">Astro Flight</h5>
+                <h3 class="flight-name">Cape Town - Jozi</h3>
                 <span class="flight-price">From $200/Flight</span>
+
                 <div class="flight-rating">
                     <i class="fas fa-star rating"></i>
                     <i class="fas fa-star rating"></i>
@@ -114,7 +116,7 @@
                     <i class="fas fa-star rating"></i>
                     <i class="fas fa-star-half rating"></i> 
                 </div>
-                <a href="/" class="btn btn-gradient">Book now
+                <a href="/singleflight" class="btn btn-gradient">Book now
                   <span class="dots"><i class="fas fa-ellipsis-h"></i></span> 
                 </a>
             </div>
@@ -164,10 +166,15 @@
 </template>
 
 <script>
-
+export default{
+  data(){
+    return{}
+  }
+}
 
 </script>
 <style  >
+
 
 @import url('https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,800&display=swap');
 

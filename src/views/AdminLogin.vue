@@ -1,6 +1,6 @@
 <template>
   <div class="body">
-<h2>Login Form</h2>
+<h2>Admin Login Form</h2>
 
 <form @submit.prevent="login" >
   <div class="imgcontainer">
@@ -29,22 +29,21 @@
 export default {
   data() {
     return {
-     
+      // name:"",
       email: "",
       password: "",
-     
-    
+      // msg:"",
+      //  isLoggedIn: false
     };
   },
   methods: {
     login() {
-      let user = {
+      fetch("https://capstone-proj-back-end.herokuapp.com/users", {
+        method: "PATCH",
+        body: JSON.stringify({
           email: this.email,
           password: this.password,
-        }
-      fetch("https://capstone-proj-back-end.herokuapp.com/users/login", {
-        method: "POST",
-        body: JSON.stringify(user),
+        }),
         headers: {
           "Content-type": "application/json; charset=UTF-8",
         },

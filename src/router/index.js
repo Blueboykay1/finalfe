@@ -5,7 +5,10 @@ import Login from '../views/Login.vue'
 import Signup from '../views/Signup.vue'
 
 import Cardz from '../views/Cardz.vue'
+
+import AdminLogin from '../views/AdminLogin.vue'
 const routes = [
+
   {
     path: '/home',
     name: 'Home',
@@ -21,7 +24,11 @@ const routes = [
     name: 'Login',
     component: Login
   },
-  
+  {
+    path: '/admin',
+    name: 'Admin',
+    component: AdminLogin
+  },
   {
     path: '/flights',
     name: 'Cardz',

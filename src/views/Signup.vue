@@ -13,8 +13,13 @@
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
 
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <label for="full_name"><b>Full Name</b></label>
+    <input type="text" placeholder="Enter Full Name" name="full_name" id="full_name" required>
+
+    <label for="contact_number"><b>Contact Number:</b></label>
+    <input type="text" placeholder="Enter Contact Number" name="contact_number" id="email" required>
+     
+
     <hr>
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
@@ -22,7 +27,7 @@
   </div>
   
   <div class="container signin">
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
+    <p>Already have an account? <a href="/login">Sign in</a>.</p>
   </div>
 </form>
 
@@ -32,26 +37,26 @@
 export default {
   data() {
     return {
-      name: "",
+      
       email: "",
-      contact: "",
       password: "",
-      about:"",
-      msg: '',
-      avatar:""
+      full_name: "",
+      role: "",
+      contact_number: ""
+     
     };
   },
   methods: {
     register() {
-         fetch('https://nike-store-api.herokuapp.com/users', {
+         fetch('https://capstone-proj-back-end.herokuapp.com/users', {
   method: 'POST',
   body: JSON.stringify({
     email:this.email,
     password:this.password,
-    name:this.name,
-    contact:this.contact,
-    about:this.about,
-    avatar:this.avatar
+    full_name: this.full_name,
+    role: this.role,
+    contact_number: this.contact_number
+     
   }),
   headers: {
     'Content-type': 'application/json; charset=UTF-8',
@@ -60,8 +65,8 @@ export default {
   .then((response) => response.json())
   .then((json) => console.log(json));
       this.msg = `${ this.name }  Registered Successfuly`;
-       alert("Logging in...");
-          this.$router.push({ name: "Products" });
+       alert("Signing you up...");
+          this.$router.push({ name: "Cardz" });
     },
   },
 };
