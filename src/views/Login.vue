@@ -7,17 +7,26 @@
     <img src="img_avatar2.png" alt="Avatar" class="avatar">
   </div>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+  <div class="container" >
+    <label for="email"><b>E-Mail</b></label>
+    <input type="email" placeholder="Enter e-mail" name="email" v-model="email" required>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="psw" v-model="password" required>
         
     <button type="submit">Login</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
+
+    <b-alert show dismissible variant="danger" v-if="errors.length > 0">
+      <span v-for="error in errors" :key="error">
+        {{error}}
+      </span>
+    </b-alert>
+  </div>
+  <div class="success" v-if="showSuc">
+   <h4>You have successfully enntered your details </h4>
   </div>
 
   
@@ -29,35 +38,40 @@
 export default {
   data() {
     return {
-     
-      email: "",
-      password: "",
+      errors: [],
+      email: null,
+      password: null,
      
     
     };
   },
   methods: {
+    
     login() {
-      let user = {
-          email: this.email,
-          password: this.password,
-        }
-      fetch("https://capstone-proj-back-end.herokuapp.com/users/login", {
-        method: "POST",
-        body: JSON.stringify(user),
-        headers: {
-          "Content-type": "application/json; charset=UTF-8",
-        },
-      })
-        .then((response) => response.json())
-        .then((json) => {
-          localStorage.setItem("jwt", json.jwt);
-          alert("Logging in...");
-          this.$router.push({ name: "Products" });
+        let user = {
+            email: this.email,
+            password: this.password,
+          }
+          console.log(user)
+        fetch("https://capstone-proj-back-end.herokuapp.com/users/login", {
+          method: "PATCH",
+          body: JSON.stringify(user),
+          headers: {
+            "Content-type": "application/json; charset=UTF-8",
+          },
         })
-        .catch((err) => {
-          alert(err);
-        });
+          .then((response) => response.json())
+          .then((json) => {
+            localStorage.setItem("jwt", json.jwt);
+            
+            alert("Logging in...");
+            this.$router.push({ name: "Cardz" });
+            console.log("jwt", json.jwt)
+          })
+          .catch((err) => {
+            alert(err);
+          });
+      
     },
   },
 };

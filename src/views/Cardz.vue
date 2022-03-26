@@ -12,8 +12,8 @@
         id="sortCategory"
         onchange="sortCategory()">
         <option value="All">ALL</option>
-        <option value="RnB">RnB</option>
-        <option value="Amapiano">Amapiano</option>
+        <option value="One-Way">One-Way</option>
+        <option value="Return">Return</option>
       </select>
     </div>
   </div>
@@ -30,59 +30,114 @@ export default {
         ? JSON.parse(localStorage.getItem("products"))
         : [
       {
-        title: "CERTIFIED LOVER BOY",
-        category: "Hip-Hop",
-        price: 299.99,
-        img: "https://upload.wikimedia.org/wikipedia/en/7/79/Drake_-_Certified_Lover_Boy.png",
-      },
-      {
-        title: "ASTROWORLD",
-        category: "Hip-Hop",
-        price: 279.99,
-        img: "https://upload.wikimedia.org/wikipedia/en/0/0b/Astroworld_by_Travis_Scott.jpg",
-      },
-      {
-        title: "INDIGO",
-        category: "RnB",
-        price: 279.99,
-        img: "https://upload.wikimedia.org/wikipedia/en/1/1f/Chris_Brown_-_Indigo.png",
-      },
-      {
-        title: "Banyana",
-        category: "Amapiano",
-        price: 319.99,
-        img: "https://i1.wp.com/mposa.co.za/wp-content/uploads/2021/04/folder-9-Mposa.co_.za_-1.jpg?fit=500%2C500&ssl=1",
-      },
-      {
-        title: "Life Of A Don",
-        category: "Hip-Hop",
-        price: 399.99,
-        img: "https://upload.wikimedia.org/wikipedia/en/7/74/Life_of_a_Don.jpg",
-      },
-      {
-        title: "Over It",
-        category: "RnB",
-        price: 219.99,
-        img: "https://upload.wikimedia.org/wikipedia/en/5/5a/Summer_Walker_-_Over_It.png",
-      },
-      {
-        title: "Californication",
-        category: "Rock",
-        price: 399.99,
-        img: "https://www.thisisdig.com/wp-content/uploads/2021/06/californiacation.jpg",
-      },
-      {
-        title: "Abbey Road",
-        category: "Return",
-        price: 329.99,
-        img: "https://images7.alphacoders.com/399/399085.jpg",
-      }, 
-      {
-        brand: "FLYSAA",
+        brand: "FLYSA",
         category: "One-Way",
-        price: 249.99,
-        img: "https://images7.alphacoders.com/459/459712.jpg",
+        price: 299.99,
+        img: "https://images7.alphacoders.com/459/thumbbig-459712.webp",
+        route: "Cape Town - Jo'Burg",
+        depdate: "2022-03-27",
+        retdate: "2022-03-29",
+        deptime: "17:00",
+        rettime: "17:00"
+
+        
       },
+      {
+        brand: "FLYSA",
+        category: "One-Way",
+        price: 299.99,
+        img: "https://images7.alphacoders.com/459/thumbbig-459712.webp",
+        route: "Cape Town - Jo'Burg",
+        depdate: "2022-03-27",
+        retdate: "2022-03-29",
+        deptime: "17:00",
+        rettime: "17:00"
+        
+        },
+      {
+        
+        brand: "FLYSA",
+        category: "One-Way",
+        price: 299.99,
+        img: "https://images7.alphacoders.com/459/thumbbig-459712.webp",
+        route: "Cape Town - Jo'Burg",
+        depdate: "2022-03-27",
+        retdate: "2022-03-29",
+        deptime: "17:00",
+        rettime: "17:00"
+        },
+      {
+        
+        brand: "FLYSA",
+        category: "One-Way",
+        price: 299.99,
+        img: "https://images7.alphacoders.com/459/thumbbig-459712.webp",
+        route: "Cape Town - Jo'Burg",
+        depdate: "2022-03-27",
+        retdate: "2022-03-29",
+        deptime: "17:00",
+        rettime: "17:00"
+        },
+      {
+        
+        brand: "FLYSA",
+        category: "One-Way",
+        price: 299.99,
+        img: "https://images7.alphacoders.com/459/thumbbig-459712.webp",
+        route: "Cape Town - Jo'Burg",
+        depdate: "2022-03-27",
+        retdate: "2022-03-29",
+        deptime: "17:00",
+        rettime: "17:00"
+        },
+      {
+        
+        brand: "FLYSA",
+        category: "One-Way",
+        price: 299.99,
+        img: "https://images7.alphacoders.com/459/thumbbig-459712.webp",
+        route: "Cape Town - Jo'Burg",
+        depdate: "2022-03-27",
+        retdate: "2022-03-29",
+        deptime: "17:00",
+        rettime: "17:00"
+         },
+      {
+        
+        brand: "FLYSA",
+        category: "One-Way",
+        price: 299.99,
+        img: "https://images7.alphacoders.com/459/thumbbig-459712.webp",
+        route: "Cape Town - Jo'Burg",
+        depdate: "2022-03-27",
+        retdate: "2022-03-29",
+        deptime: "17:00",
+        rettime: "17:00"
+        },
+      {
+       
+        brand: "FLYSA",
+        category: "One-Way",
+        price: 299.99,
+        img: "https://images7.alphacoders.com/459/thumbbig-459712.webp",
+        route: "Cape Town - Jo'Burg",
+        depdate: "2022-03-27",
+        retdate: "2022-03-29",
+        deptime: "17:00",
+        rettime: "17:00"
+        }, 
+      {
+        
+        brand: "FLYSA",
+        category: "One-Way",
+        price: 299.99,
+        img: "https://images7.alphacoders.com/459/thumbbig-459712.webp",
+        route: "Cape Town - Jo'Burg",
+        depdate: "2022-03-27",
+        retdate: "2022-03-29",
+        deptime: "17:00",
+        rettime: "17:00"
+        },
     ];        
     let cart = JSON.parse(localStorage.getItem("cart"))
   ? JSON.parse(localStorage.getItem("cart"))
@@ -135,13 +190,13 @@ export default {
                     </div>
                     <div class="modal-body">
                       <div class="mb-3">
-                        <label for="editTitle${position}" class="form-label">Title</label>
+                        <label for="editBrand${position}" class="form-label">Brand</label>
                         <input
                           class="form-control"
                           type="text"
                           name="editBrand${position}"
                           id="editBrand${position}"
-                          value="${product.title}"/>
+                          value="${product.brand}"/>
                       </div>
                       <div class="mb-3">
                         <label for="editCategory${position}" class="form-label">Category</label>
@@ -150,7 +205,7 @@ export default {
                           name="editCategory${position}"
                           id="editCategory${position}">
                           <option value="All">All</option>
-                      <option value="One_way">One Way</option>
+                      <option value="One-Way">One Way</option>
                       <option value="Return">Return</option>
                         </select>
                       </div>
@@ -172,6 +227,55 @@ export default {
                           id="editImg${position}"
                           value="${product.img}"/>
                       </div>
+
+                      <div class="mb-3">
+                        <label for="editRoute${position}" class="form-label">Route</label>
+                        <input
+                          class="form-control"
+                          type="text"
+                          name="editRoute${position}"
+                          id="editRoute${position}"
+                          value="${product.route}"/>
+
+
+                      <div class="mb-3">
+                        <label for="editDepDate${position}" class="form-label">Depature Date</label>
+                        <input
+                          class="form-control"
+                          type="date"
+                          name="editDepDate${position}"
+                          id="editDepDate${position}"
+                          value="${product.depdate}"/>
+
+
+                      <div class="mb-3">
+                        <label for="editRetDate${position}" class="form-label">Return Date</label>
+                        <input
+                          class="form-control"
+                          type="date"
+                          name="editRetDate${position}"
+                          id="editRetDate${position}"
+                          value="${product.retdate}"/>
+                    </div>
+
+                      <div class="mb-3">
+                        <label for="editDepTime${position}" class="form-label">Departure Time</label>
+                        <input
+                          class="form-control"
+                          type="time"
+                          name="editDepTime${position}"
+                          id="editDepTime${position}"
+                          value="${product.deptime}"/>
+
+
+                      <div class="mb-3">
+                        <label for="editRetTime${position}" class="form-label">Return Time</label>
+                        <input
+                          class="form-control"
+                          type="time"
+                          name="editRetTime${position}"
+                          id="editRetTime${position}"
+                          value="${product.rettime}"/>
                     </div>
                     <div class="modal-footer">
                       <button
@@ -199,19 +303,32 @@ export default {
 
     // CREATE
     function createProduct() {
-      let title = document.querySelector("#addTitle").value;
+      let brand = document.querySelector("#addBrand").value;
       let category = document.querySelector("#addCategory").value;
       let price = document.querySelector("#addPrice").value;
       let img = document.querySelector("#addImg").value;
+      let route = document.querySelector("#addRoute").value;
+      let depdate = document.querySelector("#addDepatureDate").value;
+      let retdate = document.querySelector("#addReturnDate").value;
+      let deptime = document.querySelector("#addDepatureTime").value;
+      let rettime = document.querySelector("#addDepatureDate").value;  
+    
 
       try {
-        if (!title || !price || !img)
+        if (!brand || !price || !img)
           throw new Error("Please fill in all fields");
         products.push({
-          title,
+          brand,
           category,
           price,
           img,
+          route,
+          depdate,
+          retdate,
+          deptime,
+          rettime
+     
+          
         });
 
         localStorage.setItem("products", JSON.stringify(products));
@@ -227,7 +344,14 @@ export default {
       let category = document.querySelector(`#editCategory${position}`).value;
       let price = document.querySelector(`#editPrice${position}`).value;
       let img = document.querySelector(`#editImg${position}`).value;
+      let route = document.querySelector(`#editRoute${position}`).value;
+      let depdate = document.querySelector(`#editDepartueDate${position}`).value;
+      let retdate = document.querySelector(`#editReturn${position}`).value;
+      let deptime = document.querySelector(`#editDepatureTime${position}`).value;
+      let rettime = document.querySelector("#addDepatureDate").value;
+// {
 
+// }
       try {
         if (!brand || !price || !img)
           throw new Error("Please fill in all fields");
@@ -236,6 +360,11 @@ export default {
           category,
           price,
           img,
+          route,
+          depdate,
+          retdate,
+          deptime,
+          rettime
         };
         localStorage.setItem("products", JSON.stringify(products));
         readProducts(products);
@@ -262,9 +391,9 @@ export default {
       let qty = document.querySelector(`#addToCart${position}`).value;
       let added = false;
       cart.forEach((product) => {
-        if (product.title == products[position].title) {
+        if (product.brand == products[position].brand) {
           alert(
-            `You have successfully added ${qty} ${products[position].title} to the cart`
+            `You have successfully added ${qty} ${products[position].brand} to the cart`
           );
           product.qty = parseInt(product.qty) + parseInt(qty);
           added = true;
@@ -273,7 +402,7 @@ export default {
       if (!added) {
         cart.push({ ...products[position], qty });
         alert(
-          `You have successfully added ${qty} ${products[position].title} to the cart`
+          `You have successfully added ${qty} ${products[position].brand} to the cart`
         );
       }
 
@@ -337,7 +466,7 @@ export default {
   
 </script>
 
-<style>
+<style scoped>
 #products {
   flex-wrap: wrap;
   gap: 20px;
