@@ -52,7 +52,7 @@ export default {
         .then((json) => {
           localStorage.setItem("jwt", json.jwt);
           alert("Logging in...");
-          this.$router.push({ name: "Products" });
+          this.$router.push({ name: "AdminDashboard" });
         })
         .catch((err) => {
           alert(err);

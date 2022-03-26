@@ -7,160 +7,15 @@
             <h2 class="subtitle">Affordable Flights</h2>
 
           </div>
-          <a href="/login" class="btn btn-gradient">Explore Now
+          <a href="/flights" class="btn btn-gradient">Explore Now
             <!-- <i class="fal fa-anchor"></i> -->
           </a>
       </div>
  </div>
-<section class="booking">
-<div class="container">
-  <form action="" class="form">
-    
-            <h2 class="subtitle">Booking form</h2>
-
-      <div class="input-group">
-        <label for="destination" class="input-label">Destination</label>
-        <input type="text" class="input" id="destination">
-      </div>
-
-      <div class="input-group">
-        <label for="check-in" class="input-label">Check in</label>
-        <input type="text" class="input" id="check-in">
-      </div>
-
-
-      <div class="input-group">
-        <label for="check-out" class="input-label">Check out</label>
-        <input type="text" class="input" id="check-out">
-      </div>
-
-      <div class="input-group">
-        <label for="adults" class="input-label">Adults</label>
-        <select name="" id="adults" class="options">
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-      </div>
-
-      <div class="input-group">
-        <label for="children" class="input-label">children</label>
-        <select name="" id="children" class="options">
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-
-        <label for="Class" class="input-label">Class:</label>
-           <select name="" id="children" class="options">
-          <option value="Economy">Economy</option>
-          <option value="Business">Business</option>
-         
-        </select>
-      </div>
-      <button type="submit"  class="btn form-btn btn-purple">Purchase Ticket
-        <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
-
-      </button>
-  </form>
-
-</div>
 
 
 
 
-
-
-
-
-</section>
-<section class="flights">
-    <div class="container">
-        <h5 class="section-head">
-            <span class="heading">Explore</span>
-            <span class="sub-heading">Our Luxurious Flights</span>
-        </h5>
-        <div class="grid">
-            <div class="grid-item featured-flights">
-                <img src="../assets/Pics/f1.jpg" alt="" class="flight-image">
-                <h5 class="flight-name">Astro Flight</h5>
-                <span class="flight-price">From $200/Flight</span>
-                <div class="flight-rating">
-                    <i class="fas fa-star rating"></i>
-                    <i class="fas fa-star rating"></i>
-                    <i class="fas fa-star rating"></i>
-                    <i class="fas fa-star rating"></i>
-                    <i class="fas fa-star-half rating"></i> 
-                </div>
-                <a href="" class="btn btn-gradient">Book now
-                  <span class="dots"><i class="fas fa-ellipsis-h"></i></span> 
-                </a>
-            </div>
-
-            <div class="grid-item featured-flights">
-                <img src="../assets/Pics/f1.jpg" alt="" class="flight-image">
-                <h5 class="flight-name">Astro Flight</h5>
-                <h3 class="flight-name">Cape Town - Jozi</h3>
-                <span class="flight-price">From $200/Flight</span>
-
-                <div class="flight-rating">
-                    <i class="fas fa-star rating"></i>
-                    <i class="fas fa-star rating"></i>
-                    <i class="fas fa-star rating"></i>
-                    <i class="fas fa-star rating"></i>
-                    <i class="fas fa-star-half rating"></i> 
-                </div>
-                <a href="/singleflight" class="btn btn-gradient">Book now
-                  <span class="dots"><i class="fas fa-ellipsis-h"></i></span> 
-                </a>
-            </div>
-            
-        </div>
-    </div>
-</section>
-<section class="contact">
-    <div class="container">
-        <h5 class="section-head">
-          <span class="heading">Contact</span>
-          <span class="sub-heading">Get in touch with us</span>
-        </h5>
-      <div class="contact-content">
-          <div class="traveler-wrap">
-            <img src="@/assets/Pics/contact.jpg" alt="">
-          </div>
-          <form action="" class="form contact-form">
-              <div class="input-group-wrap">
-                  <div class="input-group">
-                    <input type="text" class="input" placeholder="Name" required> 
-                    <span class="bar"></span>
-                  </div>
-                  <div class="input-group">
-                    <input type="text" class="input" placeholder="E-mail" required> 
-                    <span class="bar"></span>
-                  </div>
-                  <div class="input-group">
-                    <input type="text" class="input" placeholder="Subject" required> 
-                    <span class="bar"></span>
-                  </div>
-                  
-                  
-                  <div class="input-group">
-                      <textarea class="input" placeholder="E-mail" cols="30" rows="8" required> </textarea>
-                   
-                  </div>
-              </div>
-              <button type="submit" class="btn form-btn bt-purple"></button> Send Message
-          </form>
-      </div>
-    </div>
-
-</section>
 
   </main>
 </template>
@@ -259,6 +114,7 @@ body{
 .hero{
   width: 100%;
   height: 100vh;
+  
 
   background: url('../assets/Pics/wally.jpg');
 /* background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.23) 18%, rgb(0, 0, 0) 100%), url('../assets/Pics/wally.jpg') center no-repeat; */

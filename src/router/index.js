@@ -4,9 +4,13 @@ import Login from '../views/Login.vue'
 
 import Signup from '../views/Signup.vue'
 
-import Cardz from '../views/Cardz.vue'
+import Allflights from '../views/Allflights.vue'
+import SingleF from '../views/SingleF.vue'
 
 import AdminLogin from '../views/AdminLogin.vue'
+
+import Contact from '../views/Contact.vue'
+import AdminDashboard from '../views/AdminDashboard.vue'
 const routes = [
 
   {
@@ -30,9 +34,25 @@ const routes = [
     component: AdminLogin
   },
   {
+    path: '/admindash',
+    name: 'AdminDashboard',
+    component: AdminDashboard
+  },
+  {
     path: '/flights',
-    name: 'Cardz',
-    component: Cardz
+    name: 'Allflights',
+    component: Allflights
+  },
+  {
+    path: '/singlef/:id',
+    name: 'SingleF',
+    component: SingleF,
+    props: true
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: Contact
   },
   {
     path: '/about',

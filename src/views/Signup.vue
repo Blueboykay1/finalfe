@@ -2,7 +2,7 @@
 <div class="body">
 
 <form @submit.prevent="register" >
-  <div class="container">
+  <div class="sign">
     <h1>Register</h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
@@ -17,8 +17,14 @@
     <input type="text" placeholder="Enter Full Name" name="full_name" id="full_name" required>
 
     <label for="contact_number"><b>Contact Number:</b></label>
-    <input type="text" placeholder="Enter Contact Number" name="contact_number" id="email" required>
-     
+    <input type="text" placeholder="Enter Contact Number" name="contact_number" id="conatct_number" required>
+
+    <label for="about"><b>About</b></label>
+    <input type="text" placeholder="Tell us about yourself..." name="about" id="about" >
+
+    <label for="avatar"><b>Avatar</b></label>
+    <input type="text" placeholder="Enter the link of your desired avatar" name="avatar" id="avatar" >
+     <!-- full_name, password, contact_number, about, avatar -->
 
     <hr>
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
@@ -41,8 +47,9 @@ export default {
       email: "",
       password: "",
       full_name: "",
-      role: "",
-      contact_number: ""
+      contact_number: "",
+      about: "",
+      avatar: ""
      
     };
   },
@@ -55,7 +62,9 @@ export default {
     password:this.password,
     full_name: this.full_name,
     role: this.role,
-    contact_number: this.contact_number
+    contact_number: this.contact_number,
+    about: this.about,
+    avatar: this.avatar
      
   }),
   headers: {
@@ -66,7 +75,7 @@ export default {
   .then((json) => console.log(json));
       this.msg = `${ this.name }  Registered Successfuly`;
        alert("Signing you up...");
-          this.$router.push({ name: "Cardz" });
+          this.$router.push({ name: "Home" });
     },
   },
 };
@@ -82,7 +91,7 @@ export default {
 }
 
 /* Add padding to containers */
-.container {
+.sign {
   padding: 16px;
   background-color: white;
 }

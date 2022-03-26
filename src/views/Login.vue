@@ -19,15 +19,9 @@
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
 
-    <b-alert show dismissible variant="danger" v-if="errors.length > 0">
-      <span v-for="error in errors" :key="error">
-        {{error}}
-      </span>
-    </b-alert>
+    <!--  -->
   </div>
-  <div class="success" v-if="showSuc">
-   <h4>You have successfully enntered your details </h4>
-  </div>
+  
 
   
 </form>
@@ -38,9 +32,9 @@
 export default {
   data() {
     return {
-      errors: [],
-      email: null,
-      password: null,
+      
+      email: "",
+      password: "",
      
     
     };
@@ -65,7 +59,7 @@ export default {
             localStorage.setItem("jwt", json.jwt);
             
             alert("Logging in...");
-            this.$router.push({ name: "Cardz" });
+            this.$router.push({ name: "Allflights" });
             console.log("jwt", json.jwt)
           })
           .catch((err) => {
